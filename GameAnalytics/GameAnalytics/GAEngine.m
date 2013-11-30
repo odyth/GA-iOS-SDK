@@ -729,11 +729,6 @@ static NSMutableSet *offlineArchive;
                                                   object:nil];
 }
 
-+(void) dealloc
-{
-    dispatch_release(inProgressRequestsMutableSetAccessQueue);
-}
-
 #pragma mark GARequestDelegate
 
 - (void) removeFromInProgressQueue:(GARequest *)request
